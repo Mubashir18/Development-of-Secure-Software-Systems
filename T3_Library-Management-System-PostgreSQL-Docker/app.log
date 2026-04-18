@@ -1,0 +1,39 @@
+2026-04-10 23:38:50,802 - INFO - Successfully connected to database
+2026-04-10 23:44:51,154 - INFO - Successfully connected to database
+2026-04-10 23:53:48,997 - INFO - Viewed all records from books
+2026-04-10 23:54:17,144 - INFO - Filtered members by 1=1
+2026-04-10 23:57:56,438 - INFO - Application closed by user
+2026-04-10 23:57:56,439 - INFO - Database connection closed
+2026-04-11 00:01:41,383 - INFO - Successfully connected to database
+2026-04-11 00:01:47,035 - INFO - Successfully connected to database
+2026-04-11 00:02:45,568 - INFO - Viewed all records from books
+2026-04-11 00:03:12,416 - INFO - Viewed all records from authors
+2026-04-11 00:03:36,307 - INFO - Application closed by user
+2026-04-11 00:03:36,308 - INFO - Database connection closed
+2026-04-11 00:07:32,340 - INFO - Successfully connected to database
+2026-04-11 00:10:51,778 - INFO - Successfully connected to database
+2026-04-11 00:11:02,361 - INFO - Successfully connected to database
+2026-04-11 00:11:52,512 - INFO - Viewed all records from books
+2026-04-11 00:12:47,228 - INFO - Filtered books by 1=1
+2026-04-11 00:13:08,720 - INFO - Filtered books by 2=2
+2026-04-11 00:14:48,377 - INFO - Viewed all records from books
+2026-04-11 00:18:24,526 - INFO - Application closed by user
+2026-04-11 00:18:24,527 - INFO - Database connection closed
+2026-04-11 00:19:33,395 - INFO - Successfully connected to database
+2026-04-11 00:19:57,144 - ERROR - Filter error on books: syntax error at or near "="
+LINE 1: SELECT * FROM books WHERE  = ''
+                                   ^
+
+2026-04-11 00:21:48,481 - ERROR - Insert error in authors: current transaction is aborted, commands ignored until end of transaction block
+
+2026-04-11 00:22:04,212 - INFO - Viewed all records from authors
+2026-04-11 00:23:15,709 - ERROR - Insert error in authors: column "pakistan" of relation "authors" does not exist
+LINE 1: INSERT INTO authors (name, country, pakistan) VALUES ('John ...
+                                            ^
+
+2026-04-11 00:23:23,552 - INFO - Viewed all records from authors
+2026-04-11 00:24:02,367 - ERROR - Insert error in authors: syntax error at or near "test"
+LINE 1: INSERT INTO authors (john test, india) VALUES ('country', ''...
+                                  ^
+
+2026-04-11 00:24:09,864 - INFO - Viewed all records from authors
